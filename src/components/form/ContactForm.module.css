@@ -1,0 +1,82 @@
+.form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.fullname {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input__label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: center;
+}
+
+.name__span {
+    font-size: 20px;
+    color: rgb(0, 183, 255);
+}
+
+.input__name {
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 2px solid rgb(0, 183, 255);
+    outline-style: none;
+    color: rgb(0, 183, 255);
+    padding: 1px;
+    width: 100%;
+    min-width: 350px;
+    min-height: 40px;
+    font-size: 20px;
+}
+
+.select__btn {
+    margin-top: 5px;
+    padding: 10px;
+    min-width: 350px;
+    min-height: 40px;
+    color: rgb(0, 183, 255);
+    border: 2px solid rgb(0, 183, 255);
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+}
+
+.selectphone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    column-gap: 300px;
+    margin-right: 100px;
+}
+
+.add__btn {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+    padding: 8px 60px;
+    font-size: 18px;
+    color: white;
+    border: 2px solid rgb(0, 183, 255);
+    background-color: rgb(0, 183, 255);
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.add__btn:hover{
+    color: rgb(0, 183, 255);
+    background-color: white;
+    transition: 0.5s;
+}

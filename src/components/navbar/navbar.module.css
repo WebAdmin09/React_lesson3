@@ -1,0 +1,25 @@
+.navbar{
+    background-color: #F0F3F7;
+}
+.images{
+    width: 20%;
+    height: 100%;
+    display: flex; 
+}
+.linkimg{
+    width: 100%;
+    height: 100%;
+}
+.gitimg{
+    max-width: 42px;
+    max-height: 42px;
+}
+.twitterimg{
+    max-width: 42px;
+    max-height: 42px;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
