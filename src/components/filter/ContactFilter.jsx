@@ -5,7 +5,7 @@ import style from './ContactFilter.module.css';
 
 export class ContactFilter extends Component {
     render() {
-        const { searching, search, catigorysort, category } = this.props;
+        const { searching, search, categorysort, category } = this.props;
         return (
             <InputGroup className="my-3">
                 <Form.Control
@@ -15,7 +15,7 @@ export class ContactFilter extends Component {
                     placeholder="Search person......."
                 />
                 <InputGroup.Text className={style['inputText']}>
-                    <Form.Select value={category} onChange={catigorysort}>
+                    <Form.Select value={category} onChange={categorysort}>
                         <option value="all">All</option>
                         {categories.map((category) => (
                             <option key={category} value={category}>

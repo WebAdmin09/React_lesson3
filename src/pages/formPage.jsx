@@ -38,12 +38,12 @@ export class FormPage extends Component {
   render() {
     let { persons, search, category, person } = this.state;
 
-    persons = persons.filter((p) =>
-      p.lastName.toLowerCase().includes(search.toLowerCase())
+    persons = persons.filter((e) =>
+      e.lastName.toLowerCase().includes(search.toLowerCase())
     );
 
     if (category !== "all") {
-      persons = persons.filter((p) => p.category === category);
+      persons = persons.filter((e) => e.category === category);
     }
 
     const searching = (e) => {
@@ -56,7 +56,7 @@ export class FormPage extends Component {
 
     const submit = (e) => {
       e.preventDefault();
-      let newpersons = [...persons, { ...person, done: false, id: Date.now() }];
+      let newpersons = [...persons, { ...person, }];
       this.setState({
         persons: newpersons,
         person: { lastName: 'John', category: "family" },
@@ -68,8 +68,8 @@ export class FormPage extends Component {
       this.setState({ person: newperson });
     };
 
-    // const doneFavourite = persons.filter((p) => p.favourite);
-    const undoneFavourite = persons.filter((p) => !p.favourite);
+    // const doneFavourite = persons.filter((e) => e.favourite);
+    const undoneFavourite = persons.filter((e) => !e.favourite);
 
     return (
       <div>
